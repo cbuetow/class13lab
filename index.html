@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <title>Class 13 Lab</title>
+</head>
+<body>
+    <h1>Gradebook Application</h1>
+
+    <form id="gradebook">
+        <label for="firstName">First Name: </label>
+        <input type="text" name="name" id="firstName"><br><br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="name" id="lastName"><br><br>
+
+        <label for="pointsEarned">Points Earned: </label>
+        <input type="number" name="grade" id="pointsEarned"><br><br>
+
+        <label for="pointsPossible">Points Possible: </label>
+        <input type="number" name="grade" id="pointsPossible"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>
+        A = Between 100 and 90 <br>
+        B = Between 89 and 80 <br>
+        C = Between 79 and 70 <br>
+        D = Between 69 and 60 <br>
+        F = Between 59 and 0 <br>
+    </p>
+
+    <p id="output"></p>
+    <p id="letterGrade"></p>
+</body>
+</html>
