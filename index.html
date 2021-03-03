@@ -5,10 +5,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="code.js"></script>
     <title>Class 13 Lab</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
     <h1>Gradebook Application</h1>
-
     <form id="gradebook">
         <label for="firstName">First Name: </label>
         <input type="text" name="name" id="firstName"><br><br>
@@ -22,8 +27,24 @@
         <label for="pointsPossible">Points Possible: </label>
         <input type="number" name="grade" id="pointsPossible"><br><br>
 
-        <input type="submit" value="Submit">
-    </form>
+        <button id="addStudent">Add Student</button>
+    </form> <br>
+
+    <button id="sortName">Sort by Name</button> <br>
+    <button id="sortGrade">Sort by Grade</button>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Last Name, First Name</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+
+        <tbody></tbody>
+
+    </table> <br>
+
 
     <p>
         A = Between 100 and 90 <br>
@@ -33,7 +54,5 @@
         F = Between 59 and 0 <br>
     </p>
 
-    <p id="output"></p>
-    <p id="letterGrade"></p>
 </body>
 </html>
